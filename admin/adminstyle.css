@@ -1,0 +1,593 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-body{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.sidemenu{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 280px;
+    background-image: linear-gradient(to right bottom,blueviolet 20%, rgb(85, 5, 85) 80%);
+    
+}
+.mobilesidemenu{
+    display: none;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    background-image: linear-gradient(to right bottom,blueviolet 20%, rgb(85, 5, 85) 80%);
+    
+}
+.logo {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+padding-bottom: 25px;
+margin-top: 25px;
+border-bottom: 1px solid black;
+}
+.logo a{
+    font-family: 'Cookie', cursive;
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
+}
+.mobilelogo {
+    display: none;
+    width: 100%;
+    padding-bottom: 25px;
+    margin-top: 25px;
+    border-bottom: 1px solid black;
+    }
+    .mobilelogo a{
+        font-family: 'Cookie', cursive;
+        font-size: 36px;
+        color: black;
+        text-decoration: none;
+    }
+
+
+.navbar ul{
+    margin-top:20px ;
+    
+
+}
+
+.navbar ul li {
+    position: relative;
+    color: white;
+    width: 100%;
+    list-style: none;
+    
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    }
+
+
+.navbar ul li a{
+    position: relative;
+   display: block;
+    
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+    display: flex;
+    
+    
+
+}
+
+.icon{
+    display: block;
+    position: relative;
+    min-width: 30px;
+    height: 40px;
+    line-height: 40px;
+    left: 20%;
+   
+    text-align: center;
+}
+
+
+
+.title{
+    position: relative;
+    display: block;
+    left: 20%;
+height: 40px;
+line-height: 40px;
+padding: 0 10px;
+
+font-family: 'Roboto Condensed', sans-serif;
+transition: 1s;
+}
+
+#option {
+    display: block;
+    position: absolute;
+    min-width: 30px;
+    height: 40px;
+    line-height: 40px;
+    left: 90%;
+    text-align: center;
+ transition: transform 0.5s;  
+}
+
+#option2, #option3, #option4, #option5 , #option6, #optionm1, #optionm2, #optionm3, #optionm4{
+    display: block;
+    position: absolute;
+    min-width: 30px;
+    height: 40px;
+    line-height: 40px;
+    left: 90%;
+    text-align: center;
+ transition: transform 0.5s;  
+}
+
+
+
+.navbar ul li a:hover #option{
+     
+
+}
+#sub2, #sub3, #sub4, #sub5, #sub6, #subm1, #subm2, #subm3, #subm4{
+    border-bottom: 2px solid rgb(128, 128, 128);
+  background-color: rgb(62, 7, 114);
+  display: block;
+}
+
+#sub{
+      border-bottom: 2px solid rgb(128, 128, 128);
+      background-color: rgb(62, 7, 114);
+    display: block;
+}
+
+.w-sub.Active{
+    display: block;
+}
+
+.nav{
+position: fixed;
+width: calc(100% - 280px);
+left: 280px;
+background-color: white;
+border-bottom:1px solid blue;
+height: 60px;
+padding-right: 10px;
+z-index: 100;
+}
+
+.mobilenav{
+    display: none;
+    position: fixed;
+    width: calc(100% - 50px);
+    left: 50px;
+    background-color: white;
+    border-bottom:1px solid blue;
+    height: 60px;
+    padding-right: 10px;
+    z-index: 100;
+    }
+
+.top-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-image: linear-gradient(45deg,gold 10%, royalblue 30%, purple 60%);
+}
+
+.burger .fas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}
+
+.mobileburger{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-image: linear-gradient(45deg,gold 10%, royalblue 30%, purple 60%);
+}
+
+.mobileburger .fas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}
+
+
+.pr-img{
+    border-radius: 50px;
+    padding: 10px 10px;
+    background-image: linear-gradient(45deg,purple 10%, royalblue 30%, gold 60%);
+    font-weight: bold;
+    font-family: 'Cookie', cursive;
+    font-size: 22px;
+    cursor: pointer;
+}
+.pr-img a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* media ending ============= */
+/*onclick changing the class and the width*/
+.sidemenu.active{
+    width : 50px;
+}
+.logo.active {
+display: none;
+}
+.mobilelogo.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav.active {
+   width: calc(100% - 50px);
+   left: 50px;
+   padding-left: 0;
+    }
+
+    .title.active {
+       display: none;
+         }
+
+         .mobilesidemenu.active{
+            width : 280px;
+            z-index: 1000;
+        }
+       
+        .mobilenav.active {
+           width: calc(100% - 280px);
+           left: 280px;
+           padding-left: 0;
+           z-index: 1000;
+            }
+            .tablep.active{
+                position: relative;
+            margin-left: 60px;
+            max-width: 100%;
+             top: 100px;
+             padding: 10px;
+             }
+             
+             .tablecontainer.active{
+                position: relative;
+                margin-left: 60px;
+                min-width: 100%;
+                 top: 100px;
+                 padding: 10px;
+             }
+
+         .paycard{
+            position: relative;
+    margin-left: 320px;
+    margin-right: 20px;
+    top: 70px;
+    max-width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.card-pr{
+ background-color: white;
+ padding: 20px;
+ min-height: 150px;
+ margin: 20px 0px;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+
+}
+
+.card1{
+    margin-top: 12px;
+}
+.card1 h2{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(230, 166, 230);
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.nr{
+    display: flex;
+    align-items: center;  
+}
+
+.card-pr a{
+    display: block;
+    margin-top: 10px;
+    color: gold;
+    cursor: pointer;
+
+}
+.num{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*table container*/
+
+.tablecontainer{
+    position: relative;
+    margin-left: 320px;
+    min-width: 130%;
+     top: 100px;
+     padding: 10px;
+ }
+
+ .tablep{
+    position: relative;
+    margin-left: 320px;
+    max-width: 100%;
+     top: 100px;
+     padding: 10px;
+ }
+
+
+
+ tbody a{
+     text-transform: uppercase;
+     background-color: grey;
+     text-decoration: none;
+     padding: 1px;
+     border: 1px solid black;
+ }
+ tbody .d{
+     color: red;
+ }
+ 
+ .table-card{
+     background-color: white;
+     padding: 10px;
+     width: 1000px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+ }
+ .table-header{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 28px;
+     font-weight: bold;
+     font-family: 'Cookie', cursive;
+     padding: 10px 10px;
+     text-transform: uppercase;
+     border-bottom: 2px solid black;
+ }
+ 
+ .content-table{
+  border-collapse: collapse; 
+  margin: 0 0;  
+  font-size: 0.9em;
+  width: 100%;
+ }
+ 
+ .content-table thead tr{
+     background-color: #5A0964;
+     color: white;
+     border-bottom: 2px solid black;
+     font-weight: bold;
+     text-transform: uppercase;
+     text-align: left;
+ }
+ 
+ .content-table th, .content-table td{
+     padding: 15px 5px;
+     text-align: center;
+ }
+ 
+ .content-table tbody tr{
+     border-bottom: 1px solid #dddddd;
+ 
+    font-weight: bold;
+ }
+ 
+ .content-table tbody tr:nth-of-type(even){
+     background-color: blueviolet;
+     width: 100%;
+ }
+ 
+ .content-table tbody tr:last-of-type{
+     border-bottom: 2px solid purple;
+ }
+
+.table-con{
+    position: relative;
+    margin-left: 320px;
+    min-width: 50%;
+    max-height: 50%;
+     top: 100px;
+     padding: 10px;
+}
+
+
+
+ .table-c{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+ }
+ .table-c h1{
+     text-align: center;
+ }
+ #number, #name, #image{
+    margin: 7px 0;
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    outline: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-align: center;
+ }
+/* media query of the mobile  --------------------------------------------------------------------------------*/
+@media(max-width: 750px){
+    .sidemenu{
+        display: none;
+    }
+   .nav {
+       display: none;
+   }
+   .mobilenav{
+       display: block;
+   }
+  .mobilesidemenu{
+      display: block;
+  }
+  .tablep{
+        margin-left: 60px;
+        width: 100%;
+         top: 100px;
+     }
+    .tablep.active{
+        position: relative;
+    margin-left: 20px;
+    max-width: 100%;
+     top: 100px;
+     padding: 10px;
+     }
+
+     .tablecontainer{
+        position: relative;
+        margin-left: 60px;
+        min-width: 130%;
+         top: 100px;
+         padding: 10px;
+     }
+     .tablecontainer.active{
+        position: relative;
+        margin-left: 20px;
+        min-width: 100%;
+         top: 100px;
+         padding: 10px;
+     }
+}
+
+
+ #update{
+    text-decoration: none;
+   cursor: pointer;
+    background-image: linear-gradient(
+45deg
+, rgba(171, 238, 161, 1) 50%, rgba(224, 224, 224, 0.8) 50%);
+
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    padding: 15px 20px;
+
+    }
+
+    .error{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        color: red;
+    }
+    
+    .err{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: bold;
+        color: green;
+    }
+    
+    .succes{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        color: #eb0dbb;
+    }
+
+    @media(max-width : 510px){
+        .pr-img{
+            border-radius: 0px;
+            padding: 3px 3px;
+            background-image: linear-gradient(45deg,purple 10%, royalblue 30%, gold 60%);
+            font-weight: bold;
+            font-family: 'Cookie', cursive;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .pr-img a{
+            text-decoration: none;
+            color: black;
+        }
+     .notification h2{
+         font-size: 14px;
+     }
+     
+     .table-card{
+         width: 480px;
+     }
+
+
+
+    }
+
+    @media( max-width : 370px){
+
+        .card1{
+            margin-top: 12px;
+        }
+        .card1 h2{
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: rgb(230, 166, 230);
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+    }

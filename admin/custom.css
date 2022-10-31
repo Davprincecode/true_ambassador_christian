@@ -1,0 +1,344 @@
+*{
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.nav-bg{
+    background-color: rgba(209, 213, 219, 1);
+}
+
+.nav-parent
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: 'Cookie', cursive;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-transform: capitalize;
+    padding: 0.75rem 0.5rem;
+    align-items: center;
+}
+
+.nav-parent a{
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-parent a:hover{
+
+color: gray;
+}
+nav-content {
+    margin-right: 33px;
+}
+
+
+.container {
+ 
+max-width: 95%;
+margin: 0 auto;
+max-height: 1000px;
+overflow: hidden;
+
+}
+
+.img-container{
+    padding-top: 84%;
+background-image: url(../image/hero1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position-x: center;
+background-position-y: top;
+
+}
+.content{
+    position : absolute;
+
+     top : 10px;
+     left : 10px;
+}
+
+.hero-content{
+
+    color : rgba(86, 197, 123, 0.973);
+    font-weight: 100;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: bold;
+
+}
+.hero-paragraph{
+    text-transform: uppercase;
+
+}
+
+.hero-btn{
+text-transform: uppercase;
+background-color: green;
+padding: 10px;
+border-radius: 25px;
+
+
+
+}
+
+
+.bg-white {
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    max-height: 1000px;
+    margin-top: 45px;
+    
+}
+.bg-header{
+    font-family: 'Cookie', cursive;
+    font-size: 42px;
+    color: #71b560;
+    text-transform: capitalize;
+    margin-bottom: 11px;
+    margin : 0 auto;
+    text-align: center;
+    font-weight: bold;
+    line-height: 125.9%;
+    word-spacing: 30%;
+}
+
+.card {
+    box-shadow: 4px 4px 4px rgb(0 0 0 / 50%);
+    background-image: linear-gradient(
+0deg
+, rgba(224.000001847744, 224.000001847744, 224.000001847744, 1) 6.807053089141846%,rgba(171.00000500679016, 238.00000101327896, 161.0000056028366, 1) 81.41555786132812%);
+    width: 270px;
+    height: 401px;
+    border-radius: 20px;
+    
+}
+
+.h1-card{
+text-align: center;
+text-transform:uppercase;
+margin-top: 10px;
+margin: o auto;
+}
+
+.invest-bg {
+    
+background-color: white;
+max-height: 1000px;
+width: 95%;
+margin: 0 auto;
+margin-top: 40px;
+
+}
+
+.header-invest{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: larger;
+    line-height: 10px;
+
+}
+.p-c {
+text-align: center;
+margin-bottom: 10px;
+}
+
+.card-invest{
+
+    box-shadow: 4px 6px 4px rgb(0 0 0);
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 337px;
+    height: 474px;
+    border-radius: 10px;
+    
+}
+
+
+
+.app-container {
+    position: relative;
+    background-color: rgba(187.00000405311584, 241.00000083446503, 178.00000458955765, 1);
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 1043px;
+   
+}
+
+
+.app-content h1 {
+    color: rgba(249.00000035762787, 249.00000035762787, 250.00000029802322, 1);
+    width: 611px;
+    
+   
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 0;
+}
+.app-content p {
+    color: rgba(249.00000035762787, 249.00000035762787, 250.00000029802322, 1);
+    margin: 10px;
+    width: 363px;
+    height: 25px;
+   
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    font-size: 32px;
+    letter-spacing: 0;
+}
+
+.android-img{
+    background-color: rgba(0, 0, 0, 1);
+    width: 567px;
+    height: 258px;
+    position: absolute; }
+    
+ .apple-img {
+
+    background-color: rgba(0, 0, 0, 1);
+    width: 559.5585327148438px;
+    height: 270.271484375px;
+    position: absolute;
+    
+}
+
+.splash-img{
+
+    transform: rotate(
+-14.123149341925439deg
+);
+    background-color: rgba(255, 255, 255, 1);
+    width: 485px;
+    height: 559px;
+    position: absolute;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+.review-container{
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 95%;
+    padding: 10px;
+    
+    height: 1084px;
+   margin: 0 auto;
+}
+.review-card{
+    background-color: rgba(255, 255, 255, 1);
+    width: 388px;
+    height: 512px;
+}
+.review-img{
+
+    border-radius: 500px;
+    background-color: rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+    width: 126px;
+    height: 123px;
+    background-image: url(image/ellipse_5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.review-content{
+    color: rgba(0, 0, 0, 1);
+    width: 252px;
+    height: 267px;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1;
+}
+
+
+
+
+
+.footr{
+    width: 447px;
+    height: 417px;
+    background-color: black;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+
+/*user dashboard style */
+
+.navbar {
+    background-color: rgba(7.065622061491013, 121.12499848008156, 52.6893825083971, 1);
+    width: 250px;
+    height: 100%;
+
+    position: fixed;
+    left: 0px;
+}
+
+.navba ul{
+background-color: green;
+width: 100%;
+height: 100%;
+list-style: none;
+
+
+}
+.navbar ul li{
+    line-height: 60px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    padding-left: 70px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    width: 100%;
+    color: white;
+    display:block;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover{
+
+    color: rgb(151, 147, 147);
+    background-color: rgb(10, 10, 10);
+    font-weight: 450;
+    transition: 0.5s;
+}
+
+button {
+    background-color: rgb(6, 77, 6);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    border-radius: 25px;
+}
+
+button:hover{
+    color: rgb(151, 147, 147);
+    background-color: rgb(10, 10, 10);
+    font-weight: 450;
+    transition: 0.5s;
+
+}
